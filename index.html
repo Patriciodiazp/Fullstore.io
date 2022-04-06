@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+    <!--Nav-->
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<h1>Full<span>Store</span></h1>
+				</div>
+				<ul class="nav__list">
+					
+					<div class="carrito__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
+      </div>
+    </nav>
+
+    <!--Filtro-->
+    <section class="filter">
+      <div class="grid">
+        <div class="div">
+          <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+          <input type="text" id="buscar" placeholder="Buscar Shoes...">
+        </div>
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">Marcas</option>
+            <option value="rolex">Adidas</option>
+            <option value="omega">Nike</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!--Productos-->
+    <section class="productos">
+      <div class="productos__center">
+        <div class="producto">
+          <div class="image__container">
+            <img src="imagenes/Airmax-97.jpg" alt="">
+          </div>
+          <div class="producto__footer">
+            <h1>Nike 97</h1>
+            
+            <div class="price">$135</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="/productos/productos-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+            <div class="image__container">
+              <img src="imagenes/Airmax-90.jpg" alt="">
+            </div>
+            <div class="producto__footer">
+              <h1>Nike 90</h1>
+              
+              <div class="price">$95</div>
+            </div>
+            <div class="bottom">
+              <div class="btn__group">
+                <a href="#" class="btn addToCart">Añadir carrito</a>
+                <a href="/productos/productos-detalles2.html" class="btn view">Vista</a>
+              </div>
+            </div>
+          </div>
+          <div class="producto">
+            <div class="image__container">
+              <img src="imagenes/Ultraboost.jpg" alt="">
+            </div>
+            <div class="producto__footer">
+              <h1>Adidas Ultraboost</h1>
+              
+              <div class="price">$105</div>
+            </div>
+            <div class="bottom">
+              <div class="btn__group">
+                <a href="#" class="btn addToCart">Añadir carrito</a>
+                <a href="/productos/productos-detalles3.html" class="btn view">Vista</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="producto">
+            <div class="image__container">
+              <img src="imagenes/super.jfif" alt="">
+            </div>
+            <div class="producto__footer">
+              <h1>Adidas Superstar</h1>
+              
+              <div class="price">$85</div>
+            </div>
+            <div class="bottom">
+              <div class="btn__group">
+                <a href="#" class="btn addToCart">Añadir carrito</a>
+                <a href="/productos/productos-detalles4.html" class="btn view">Vista</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--Carrito-->
+
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+
+            <div class="carrito__item">
+              <img src="imagenes/Airmax-97.jpg">
+              <div>
+                <h3>Nike 97</h3>
+                <p class="price">$135</p>
+              </div>
+              <div>
+                <span>
+                  <i class="bx bxs-up-arrow"></i>
+                </span>
+                <p>1</p>
+                <span>
+                  <i class="bx bxs-down-arrow"></i>
+                </span>
+              </div>
+              <div>
+                <span class="remove__item">
+                  <i class="bx bx-trash"></i>
+                </span>
+                
+              </div>
+              
+            </div> 
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
+            <button id="pay" class="pay__carrito btn">pagar</button>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
