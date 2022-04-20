@@ -32,23 +32,7 @@ class UI {
 				<img src=${producto.image} alt="${producto.title}" class="img-fluid">
 				<div class="detalles-content">
 					<h3>${producto.title}</h3>
-					<div class="rating">
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bx-star"></i>
-						</span>
-					</div>
+					
 						<p class="price"><b>Precio: </b> $${producto.price}</p>
 						<p class="description">
 							<b>Descripcion: </b> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae ad ex sint expedita perspiciatis odit eligendi! Et quia ex aperiam dolorum sunt omnis maiores. Repudiandae delectus iste exercitationem vel?</span>
@@ -76,26 +60,10 @@ class UI {
 			<div class="producto">
 			<div class="image__container">
 			<img src=${producto.image} alt="">
-		</div>
+			</div>
           <div class="producto__footer">
             <h1>${producto.title}</h1>
-            <div class="rating">
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bx-star"></i>
-              </span>
-            </div>
+            
             <div class="price">$${producto.price}</div>
           </div>
           <div class="bottom">
@@ -333,13 +301,11 @@ document.addEventListener("DOMContentLoaded", async () =>{
 		ui.cartLogic();
 	}
 })
+
 //agrego sweet alert en evento
 const pay = document.querySelector('#pay')
 pay.addEventListener('click', ()=>{
-	swal({
-		icon: "success",
-		
-	  });
+	swal("Gracias por tu compra!","Nos vemos pronto", "success");
 })
 
 //Fetch
